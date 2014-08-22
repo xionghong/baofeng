@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/historyback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ugc_back" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/historyback"
+                android:src="@drawable/ugc_vertical_line" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/historyback"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/imageView2"
+                android:src="@drawable/jingxuan" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:scaleType="fitXY"
+            android:src="@drawable/second_menub_press" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="12px"
+            android:scaleType="fitXY"
+            android:src="@drawable/second_menub_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+            android:layout_width="71px"
+            android:layout_height="39px"
+            android:background="@drawable/textviewselect"
+            android:clickable="true"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="最新"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="71px"
+            android:layout_height="39px"
+            android:background="@drawable/textviewselect"
+            android:clickable="true"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="最热"
+            android:textSize="15sp" />
+
+</LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
